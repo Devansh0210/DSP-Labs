@@ -1,0 +1,93 @@
+\documentclass[
+	12pt, 
+]{fphw_assignment_toc}
+
+\usepackage{my_packages}
+\usepackage{graphicx}
+%\geometry{
+% a4paper,
+%% total={170mm,257mm},
+% left=20mm,
+%% top=20mm,
+% }
+%------------------------------------------------------------------------------------
+
+\title{Lab Assignment 5}        % Assignment title
+\author{Devansh Tanna}    % Student name
+\roll{2019A3PS0158P}                    % Class roll
+% \class{My Class}              % Class
+% \session{My Session}             % Session
+\email{f20190158@pilani.bits-pilani.ac.in}
+\date{\today}     % Due date
+\institute{Department of Electrical and Electronics}              % Institute or school name
+\course{Digital Signal Processing}                            % Course or course name
+
+
+%------------------------------------------------------------------------------------
+\addbibresource{ref.bib} 
+
+\setcounter{secnumdepth}{-2} 
+%\renewcommand{\thesection}{}  % https://tex.stackexchange.com/a/30202/114006
+%------------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\newpage
+\pagenumbering{gobble}    % to remove the page numbering
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}          % to start the page numbering
+
+%-----------------------------------------
+
+\section{Python Task 1}
+
+\subsection{Code}
+
+\noindent
+%\lstset{style=pystyle}
+\lstinputlisting{../Task1.m}
+
+\subsection{Results}
+%\newline
+\noindent
+
+
+% \begin{figure}[ht!]
+% \centering
+% \includegraphics[scale=0.7]{../task1.svg}
+%\end{figure}
+%\subsection{Results}
+%\end{mdframed}
+% \rule{7in}{2.8pt}
+% \begin{figure}[!ht]
+%   \centering
+
+%   \caption{ \lipsum[5][2]\cite{book:griffiths}}
+%   \label{fig:fig1}
+% \end{figure}
+
+% \newpage
+\newpage
+\section{Python Task 2}
+
+\subsection{Code}
+
+\noindent
+\lstinputlisting{../Task2.m}
+% \begin{figure}[!ht]
+%   \centering
+
+%   \caption{ \lipsum[5][2]\cite{book:griffiths}}
+%   \label{fig:fig1}
+% \end{figure}
+\subsection{Results}
+%\newline
+\noindent
+%\begin{figure}[ht!]
+% \centering
+% \includegraphics[scale=0.7]{../task2_1.svg}
+%\end{figure}
+\printbibliography[heading=bibintoc, title={References}]
+
+\end{document}

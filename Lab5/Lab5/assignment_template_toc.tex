@@ -1,0 +1,59 @@
+\documentclass[
+	12pt, 
+]{fphw_assignment_toc}
+
+\usepackage{my_packages}
+
+%------------------------------------------------------------------------------------
+
+\title{Lab Assignment 5}        % Assignment title
+\author{Devansh Tanna}    % Student name
+\roll{2019A3PS0158P}                    % Class roll
+% \class{My Class}              % Class
+% \session{My Session}             % Session
+\email{f20190158@pilani.bits-pilani.ac.in}
+\date{\today}     % Due date
+\institute{Department of Electrical and Electronics}              % Institute or school name
+\course{Digital Signal Processing}                            % Course or course name
+
+
+%------------------------------------------------------------------------------------
+\addbibresource{ref.bib} 
+
+\setcounter{secnumdepth}{-2} 
+%\renewcommand{\thesection}{}  % https://tex.stackexchange.com/a/30202/114006
+%------------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+% \pagenumbering{gobble}           % to remove the page numbering
+\newpage
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}          % to start the page numbering
+
+%-----------------------------------------
+
+\section{Python Task 1}
+%\begin{problem}
+%
+%\end{problem}
+
+\subsection{Code}
+\begin{mdframed}
+\lstinputlisting{../Task1.m}
+\end{mdframed}
+% \rule{7in}{2.8pt}
+% \begin{figure}[!ht]
+%   \centering
+
+%   \caption{ \lipsum[5][2]\cite{book:griffiths}}
+%   \label{fig:fig1}
+% \end{figure}
+
+% \newpage
+\newpage
+\phantomsection   % 
+\printbibliography[heading=bibintoc, title={References}]
+
+\end{document}
